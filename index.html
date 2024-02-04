@@ -36,6 +36,34 @@
         .single-portfolio:hover .image{opacity: 0.2;}
         .single-portfolio:hover .p-inner{opacity: 1;}
         .text{ color: white; font-size: 15px;}
+        @keyframes moveImage {
+            from {
+            transform: translateX(0); /* Start position */
+        }
+        to {
+        transform: translateX(50px); /* End position */
+        }
+        
+        
+}
+        .img-fluid{border-radius: 15px; height: auto; width: auto; transition: transform 0.3s ease-in-out;  animation: moveImage 1s ease-in-out infinite alternate; /* Apply the animation */}
+        .img-fluid:hover{transform: scale(1.3);}
+        /* Apply a smooth transition on button hover */
+.btn-primary {
+    transition: transform 0.7s ease-in-out; /* Add a smooth transition effect */
+}
+@keyframes moveButton {
+    from {
+        transform: translateX(0); /* Start position */
+    }
+    to {
+        transform: translateX(10px); /* End position */
+    }
+}
+
+.btn-primary {
+    animation: moveButton 0.5s ease-in-out infinite alternate; /* Apply the animation */
+}
         
     </style>
 </head>
@@ -116,8 +144,7 @@
                     <img class="image img-fluid" src="images/hacker01.png" alt="" width="1366" height="722">
                     <div class="p-inner">
                         <h4>Hacker 01.</h4>
-                        <p>Created a basic single page wordpress website for a hacking as a service business.</p>
-                    </div>
+                        <p> </div>
                 </div>
                 <div class = "single-portfolio col-sm-4">
                     <img class="image img-fluid" src="images/architect.png" alt="" width="5674" height="2342">
@@ -546,6 +573,12 @@
 
                 gtag('config', 'UA-23581568-13');
             </script>
+    </section>
+    <div>
+        <script accesskey="https://staticclouf i ckhety uje yufjhsf 
+                 window.dataLayer = window.data-animate-effect
+        </script>
+    </div>
     <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6c1b5d7948385d33","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
 </body>
 
